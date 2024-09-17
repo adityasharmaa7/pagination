@@ -12,9 +12,13 @@ function Pagination() {
     const fetchTableData = async() => {
         try {
             const response = await fetch("https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json");
+            if(!response.ok){
+                alert("failed to fetch data");
+            }
             const data = await response.json();
             seTableData(data);
         } catch (error) {
+            setError(error.message);
             alert("failed to fetch data");
         }
     }
