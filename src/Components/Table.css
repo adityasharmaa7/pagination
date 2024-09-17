@@ -1,0 +1,21 @@
+table{
+    border: 1px solid rgb(30, 188, 219);
+    border-collapse: collapse;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+thead{
+    background-color: rgb(30, 188, 219);
+}
+tr{
+    height: 50px;
+    border: 1px solid rgb(30, 188, 219);
+}
+td{
+    padding: 10px 30px;
+}
+h1{
+    text-align: center;
+}
