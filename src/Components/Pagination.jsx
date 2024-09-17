@@ -13,10 +13,9 @@ function Pagination() {
         try {
             const response = await fetch("https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json");
             const data = await response.json();
-            console.log(data);
             seTableData(data);
         } catch (error) {
-            console.log("failed to fetch data");
+            alert("failed to fetch data");
         }
     }
 
